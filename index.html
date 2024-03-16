@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Club</title>
 </head>
-<link rel="stylesheet" href="css/style.css">
 <style>
     /*CSS Reset*/
     body {
         margin: 0px;
         padding: 0px;
         margin-top: 20px;
-        background: url('/img/bg.jpg');
+        background: url('img/bg.jpg');
         background-size: cover;
     }
 
@@ -32,6 +31,61 @@
     header {
         margin-top: -20px;
         background-color: white;
+    }
+
+    #h1 {
+        color: orangered;
+        font-size: xx-large;
+        margin-inline: 129px;
+        margin-top: -57px;
+    }
+
+    .container {
+
+        border: 2px solid orangered;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        background-color: lightgray;
+        text-align: center;
+        display: block;
+        width: 347px;
+        padding: 10px;
+        border: 2px solid black;
+        margin: 8px auto;
+        font-size: 18px;
+        border-radius: 13px;
+    }
+
+    .container button {
+        font-size: 20px;
+        font-family: 'Baloo Bhai', cursive;
+        display: block;
+        width: 23%;
+        margin: auto;
+        background-color: orangered;
+        color: white;
+        cursor: pointer;
+    }
+
+    #text {
+        font-size: 52px;
+        font-family: 'Baloo Bhai', cursive;
+        margin-top: -530px;
+        padding-inline: 767px;
+
+    }
+
+    #t1 {
+        font-family: 'Baloo Bhai', cursive;
+        font-size: 52px;
+        margin-inline: 1003px;
     }
 </style>
 
@@ -57,11 +111,48 @@
             </div>
         </div>
         <div style="display: flex; flex-direction: row;">
-            <div style="margin-inline: 59px;">
+            <div style="font-family: cursive;
+            font-size: x-small;
+            margin-top: -48px;
+            margin-inline: 72px;">
                 Health & Fitness
             </div>
         </div>
     </header>
+    <div class="container">
+        <h1 id="h1">SIGN UP NOW</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="NAME" required="true">
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="E-MAIL">
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="PHONE">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="ZIP CODE">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <div class="text">
+        <span>
+            <h1 id="text">
+                <span>STAY</span><br><span style="color: orangered;">HEALTHY</span>
+            </h1>
+        </span>
+        <span>
+            <h1 id="t1">
+                <span>BE</span><br><span style="color: orangered;">ACTIVE</span>
+            </h1>
+        </span>
+
+    </div>
+
+
+
 </body>
 
 </html>
